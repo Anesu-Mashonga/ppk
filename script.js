@@ -1,52 +1,117 @@
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+// Mobile Menu Toggle
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
 
-let currentIndex = 0;
-const totalSlides = slides.length;
-
-function updateCarousel() {
-    const slideWidth = slides[0].clientWidth;
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
+        mobileMenu.classList.toggle('open');
+    });
 }
 
-function moveToNextSlide() {
-    if (currentIndex < totalSlides - 1) {
-        currentIndex++;
-    } else {
-        currentIndex = 0; // Loop back to the first slide
-    }
-    updateCarousel();
-}
+// Smooth Scrolling for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#' || href === '') { 
+            e.preventDefault();
+            return;
+        }
 
-function moveToPrevSlide() {
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        currentIndex = totalSlides - 1; // Loop to the last slide
-    }
-    updateCarousel();
-}
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
 
-prevButton.addEventListener('click', moveToPrevSlide);
-nextButton.addEventListener('click', moveToNextSlide);
+        if (targetElement) {
+            e.preventDefault();
+            const headerOffset = 80; 
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-// Optional: Auto-slide functionality
-let autoSlideInterval = setInterval(moveToNextSlide, 3500);
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
 
-// Pause auto-slide on hover
-const carousel = document.querySelector('.carousel');
-carousel.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-carousel.addEventListener('mouseleave', () => {
-    autoSlideInterval = setInterval(moveToNextSlide, 3500);
+            if (mobileMenu && menuBtn && mobileMenu.classList.contains('open')) {
+                menuBtn.classList.remove('active');
+                mobileMenu.classList.remove('open');
+            }
+        }
+    });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
-    const mobileMenu = document.querySelector(".mobile-menu");
+// Back to Top Button
+const backToTopBtn = document.getElementById('back-to-top');
 
-    hamburger.addEventListener("click", function () {
-        mobileMenu.classList.toggle("show");
+if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('visible');
+            backToTopBtn.classList.remove('opacity-0', 'invisible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
     });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Animation on Scroll
+const slideUpElements = document.querySelectorAll('.slide-up-animation');
+
+const animateOnScroll = () => {
+    slideUpElements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (elementPosition < screenPosition) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }
+    });
+};
+
+// Set initial state for animated elements and apply transitions
+slideUpElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(50px)';
+    const delay = el.style.animationDelay || '0s';
+    el.style.transition = `opacity 0.6s ease-out ${delay}, transform 0.6s ease-out ${delay}`;
+    el.style.animationDelay = '';
+});
+
+// Initial check on load and then on scroll
+window.addEventListener('load', animateOnScroll);
+window.addEventListener('scroll', animateOnScroll);
+
+let currentSlideIdx = 0;
+const carouselSlides = document.querySelectorAll('.carousel-slide'); // Make sure you have elements with this class
+const carouselTrack = document.querySelector('.carousel-track'); // Make sure you have an element with this class
+
+function showCarouselSlide(index) {
+    if (!carouselTrack || carouselSlides.length === 0) return;
+
+    const totalCarouselSlides = carouselSlides.length;
+    if (index >= totalCarouselSlides) currentSlideIdx = 0;
+    else if (index < 0) currentSlideIdx = totalCarouselSlides - 1;
+    else currentSlideIdx = index;
+
+    const offset = -currentSlideIdx * 100;
+    carouselTrack.style.transform = `translateX(${offset}%)`;
+}
+
+// Auto-advance carousel if elements exist
+if (carouselTrack && carouselSlides.length > 0) {
+    setInterval(() => {
+        showCarouselSlide(currentSlideIdx + 1);
+    }, 5000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    animateOnScroll();
 });

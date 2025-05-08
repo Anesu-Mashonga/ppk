@@ -3,190 +3,791 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pole Position Kurts</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pole Position Karts | Zimbabwe's Premier Karting Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-body">
+    <header class="main-header">
+        <div class="header-track-accent"></div>
+        <nav class="navigation-bar">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="./img/ppk7.png" alt="Pole Position Karts Logo" class="logo-image">
+                </div>
 
-    <header class="header">
-        <div class="navbar">
-            <div class="logo"><img src="./img/ppk7.png" alt="Pole Position Karts"></div>
-            <nav>
-                <ul>
-                    <li><a href="./about.htm">About Us</a></li>
-                    <li><a href="./partners.html">Our Partners</a></li>
-                    <li><a href="./events.html">Events</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="#" class="btn">Book Now</a></li>
-                </ul>
-            </nav>
-        <button class="hamburger">&#9776;</button>
-    </div>
+                <div class="desktop-nav-links">
+                    <a href="#about" class="nav-menu-item">About</a>
+                    <a href="#experiences" class="nav-menu-item">Experiences</a>
+                    <a href="#gallery" class="nav-menu-item">Gallery</a>
+                    <a href="#partners" class="nav-menu-item">Partners</a>
+                    <a href="#contact" class="nav-menu-item">Contact</a>
+                    <a href="#book" class="nav-book-button">Book Now</a>
+                </div>
 
-    <div class="mobile-menu">
-        <a href="./about.html">About Us</a>
-        <a href="./partners.html">Our Partners</a>
-        <a href="./events.html">Events</a>
-        <a href="./contact.html">Contact</a>
-        <a href="#" class="btn">Book Now</a>
-    </div>   
-        </div>
-        <div class="hero">
-            <h1>Fuel Your Thrill, <br> Chase The Track!</h1>
-            <div class="hero-buttons">
-                <a href="./contact.html" class="btn">Contact Us</a>
-                <a href="./about.html" class="btn secondary">Who We Are</a>
+                <button class="mobile-menu-toggle" id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </div>
+
+            <div class="mobile-nav-menu" id="mobile-menu">
+                <div class="mobile-nav-container">
+                    <a href="#about" class="mobile-nav-item">About</a>
+                    <a href="#experiences" class="mobile-nav-item">Experiences</a>
+                    <a href="#gallery" class="mobile-nav-item">Gallery</a>
+                    <a href="#partners" class="mobile-nav-item">Partners</a>
+                    <a href="#contact" class="mobile-nav-item">Contact</a>
+                    <a href="#book" class="mobile-book-button">Book Now</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section class="welcome">
-        <div class="welcome-text">
-        <h2>Welcome to: <br> <span id="ppk-text">Pole Position Karts</span></h2><br/>
-        <p>Welcome to Pole Position Karts, Zimbabwe’s premier karting destination. Located in the heart of Harare, our state-of-the-art, outdoor karting circuit offers an unforgettable experience for karting enthusiasts of all levels.<br/><br/>
-
-            Pole Position Karts provides an exciting, action-packed adventure with top-notch facilities. Whether you’re coming for a fun day out with friends, a corporate event, or a team-building session, we cater to all groups, large or small.<br/><br/>
-            
-            From sharpening your driving skills to enjoying a friendly race, Pole Position Karts promises a thrilling and memorable experience. Perfect for corporate events, birthday parties, or just a fun outing, let us make your time with us exceptional!</p>
-        </div>
-        <div class="welcome-images">
-            <img class="img1" src="/img/ppk15.jpg" alt="polePositionKarts1">
-            <img class="img2" src="/img/ppk14.jpg" alt="polePositionKarts2">
-        </div>
-    </section>
-
-    <section class="discover-more">
-        <h2>Discover More</h2>
-        <div class="carousel">
-        <div class="carousel-track">
-        <div class="carousel-slide">
-            <img src="/img/ppk16.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk15.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk20.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk18.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk12.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk11.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk19.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk9.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk8.jpg" alt="Gallery Image">
-        </div>
-        <div class="carousel-slide">
-            <img src="/img/ppk1.jpg" alt="Gallery Image">
-        </div>
-        </div>
-        <button class="carousel-button prev" aria-label="Previous Slide">&lt;</button>
-        <button class="carousel-button next" aria-label="Next Slide">&gt;</button>
+    <section class="hero-section">
+        <div class="hero-content fade-in-animation">
+            <h1 class="hero-title racing-font-style">
+                <span class="hero-title-pole">POLE</span> <span class="hero-title-position">POSITION</span> <span class="hero-title-karts">KARTS</span>
+            </h1>
+            <p class="hero-subtitle">
+                Zimbabwe's premier karting destination where speed meets excitement. Experience the thrill of the track!
+            </p>
+            <div class="hero-buttons">
+                <a href="#book" class="button-primary hero-book-button">
+                    <i class="fas fa-flag-checkered hero-button-icon"></i> Book Your Race
+                </a>
+                <a href="#about" class="button-secondary hero-learn-button">
+                    <i class="fas fa-info-circle hero-button-icon"></i> Learn More
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="why-karting">
-        <div class="why-karting-intro">
-            <div class="why-karting-head"><h2>Why Karting?<hr class="tiny-ruller"></h2>
-                
-            <a href="#" class="btn">▶ Watch Demo Video</a></div>
-        <p class="why-karting-text">Simply put, it’s fun for everyone. There is no other form of entertainment out there that can provide you or your guests with such a fun factor. Karting is an ideal activity for teambuilding, a perfect start to a bachelor’s, or even as a conferencing activity. <br><br>
-            Karting has many aliases, including leisure karting, rental karting, karts, corporate karting, go-karts, karting, and even carting, but whatever the name, it won’t disappoint.<br><br>
-            There is no other form of motorsport so closely comparable to Formula 1. In fact, most Formula 1 stars still hone their skills in karts!</p>
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header slide-up-animation">
+                <h2 class="section-title racing-font-style">
+                    <span class="title-highlight-red">WELCOME TO</span> <span class="title-highlight-blue">POLE POSITION KARTS</span>
+                </h2>
+                <div class="section-title-underline"></div>
+                <p class="section-subtitle">
+                    Zimbabwe's premier karting destination for adrenaline seekers and motorsport enthusiasts.
+                </p>
+            </div>
+
+            <div class="about-content-layout">
+                <div class="about-text-content slide-up-animation">
+                    <p class="paragraph-text">
+                        Located in the heart of Harare, our state-of-the-art outdoor karting circuit offers an unforgettable experience for karting enthusiasts of all levels. Whether you're a first-timer or a seasoned racer, we have the perfect experience for you.
+                    </p>
+                    <p class="paragraph-text">
+                        Pole Position Karts provides an exciting, action-packed adventure with top-notch facilities. Whether you're coming for a fun day out with friends, a corporate event, or a team-building session, we cater to all groups, large or small.
+                    </p>
+                    <p class="paragraph-text">
+                        From sharpening your driving skills to enjoying a friendly race, Pole Position Karts promises a thrilling and memorable experience. Perfect for corporate events, birthday parties, or just a fun outing, let us make your time with us exceptional!
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>Professional Equipment</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>Safety First</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>Experienced Staff</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image-grid slide-up-animation">
+                    <div class="image-card">
+                        <img src="./img/ppk16.jpg"
+                             alt="Karting Action"
+                             class="image-card-img">
+                        <div class="image-card-overlay">
+                            <h3 class="image-card-title">High-Speed Action</h3>
+                        </div>
+                    </div>
+                    <div class="image-card">
+                        <img src="./img/ppk11.jpg"
+                             alt="Karting Track"
+                             class="image-card-img">
+                        <div class="image-card-overlay">
+                            <h3 class="image-card-title">Professional Track</h3>
+                        </div>
+                    </div>
+                    <div class="image-card">
+                        <img src="./img/ppk18.jpg"
+                             alt="Karting Event"
+                             class="image-card-img">
+                        <div class="image-card-overlay">
+                            <h3 class="image-card-title">Team Events</h3>
+                        </div>
+                    </div>
+                    <div class="image-card">
+                        <img src="./img/ppk15.jpg"
+                             alt="Karting Fun"
+                             class="image-card-img">
+                        <div class="image-card-overlay">
+                            <h3 class="image-card-title">Family Fun</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-karting-section">
+        <div class="section-container">
+            <div class="section-header slide-up-animation">
+                <h2 class="section-title racing-font-style">
+                    <span class="title-highlight-red">WHY</span> <span class="title-highlight-blue">KARTING?</span>
+                </h2>
+                <div class="section-title-underline"></div>
+                <p class="section-subtitle">
+                    The ultimate adrenaline rush that combines skill, speed, and excitement
+                </p>
+            </div>
+
+            <div class="why-karting-content-layout">
+                <div class="why-karting-text-content slide-up-animation">
+                    <p class="paragraph-text">
+                        Simply put, it's fun for everyone. There is no other form of entertainment out there that can provide you or your guests with such a fun factor. Karting is an ideal activity for teambuilding, a perfect start to a bachelor's, or even as a conferencing activity.
+                    </p>
+                    <p class="paragraph-text">
+                        Karting has many aliases, including leisure karting, rental karting, karts, corporate karting, go-karts, karting, and even carting, but whatever the name, it won't disappoint.
+                    </p>
+                    <p class="paragraph-text">
+                        There is no other form of motorsport so closely comparable to Formula 1. In fact, most Formula 1 stars still hone their skills in karts!
+                    </p>
+                    <div class="demo-video-button-container">
+                        <a href="#" class="button-primary demo-video-button">
+                            <i class="fas fa-play-circle demo-video-icon"></i> Watch Demo Video
+                        </a>
+                    </div>
+                </div>
+
+                <div class="why-karting-image-container slide-up-animation">
+                    <div class="why-karting-image-wrapper">
+                        <img src="img/ppk9.jpg"
+                             alt="Why Karting"
+                             class="why-karting-image">
+                    </div>
+                    <div class="proven-track-record-badge">
+                        <div class="badge-icon-container">
+                            <i class="fas fa-trophy badge-icon"></i>
+                        </div>
+                        <div class="badge-text-container">
+                            <h4 class="badge-title">Proven Track Record</h4>
+                            <p class="badge-subtitle">1000+ Happy Racers Monthly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="experiences-section">
+        <div class="section-container">
+            <div class="section-header slide-up-animation">
+                <h2 class="section-title racing-font-style">
+                    <span class="title-highlight-red">RACING</span> <span class="title-highlight-blue">EXPERIENCES</span>
+                </h2>
+                <div class="section-title-underline"></div>
+                <p class="section-subtitle">
+                    Choose your adventure on our professional track
+                </p>
+            </div>
+
+            <div class="experiences-grid">
+                <div class="experience-card card-hover-effect slide-up-animation" style="animation-delay: 0.1s;">
+                    <div class="experience-card-image-container">
+                        <img src="img/ppk17.jpg"
+                             alt="Arrive & Drive"
+                             class="experience-card-image">
+                        <div class="experience-card-image-overlay"></div>
+                        <div class="experience-card-badge popular-badge">
+                            Popular
+                        </div>
+                    </div>
+                    <div class="experience-card-content">
+                        <h3 class="experience-card-title">Arrive & Drive</h3>
+                        <p class="experience-card-description">
+                            Perfect for first-timers and casual racers. Just show up and experience the thrill of karting with our ready-to-go packages.
+                        </p>
+                        <div class="experience-card-footer">
+                            <span class="experience-card-price">From $25</span>
+                            <a href="#" class="experience-card-link">
+                                Read More <i class="fas fa-chevron-right link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card card-hover-effect slide-up-animation" style="animation-delay: 0.2s;">
+                    <div class="experience-card-image-container">
+                        <img src="./img/ppk19.jpg"
+                             alt="Sprint Races"
+                             class="experience-card-image">
+                        <div class="experience-card-image-overlay"></div>
+                    </div>
+                    <div class="experience-card-content">
+                        <h3 class="experience-card-title">Sprint Races</h3>
+                        <p class="experience-card-description">
+                            Short, intense races that test your speed and agility. Perfect for competitive racers looking for quick adrenaline bursts.
+                        </p>
+                        <div class="experience-card-footer">
+                            <span class="experience-card-price">From $40</span>
+                            <a href="#" class="experience-card-link">
+                                Read More <i class="fas fa-chevron-right link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card card-hover-effect slide-up-animation" style="animation-delay: 0.3s;">
+                    <div class="experience-card-image-container">
+                        <img src="./img/ppk8.jpg"
+                             alt="Enduro Races"
+                             class="experience-card-image">
+                        <div class="experience-card-image-overlay"></div>
+                        <div class="experience-card-badge team-event-badge">
+                            Team Event
+                        </div>
+                    </div>
+                    <div class="experience-card-content">
+                        <h3 class="experience-card-title">Enduro Races</h3>
+                        <p class="experience-card-description">
+                            Endurance races that challenge both your stamina and strategy. Ideal for corporate team-building and group events.
+                        </p>
+                        <div class="experience-card-footer">
+                            <span class="experience-card-price">From $75</span>
+                            <a href="#" class="experience-card-link">
+                                Read More <i class="fas fa-chevron-right link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-experience-button-container slide-up-animation">
+                <a href="#book" class="button-primary book-experience-button">
+                    <i class="fas fa-calendar-alt button-icon"></i> Book Your Experience Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <div class="section-header slide-up-animation">
+                <h2 class="section-title racing-font-style">
+                    <span class="title-highlight-red">GALLERY</span> <span class="title-highlight-blue">MOMENTS</span>
+                </h2>
+                <div class="section-title-underline"></div>
+                <p class="section-subtitle">
+                    Capturing the thrill and excitement of our racing experiences
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./img/ppk21.jpg"
+                         alt="Gallery Image 1"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Race Action</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/ppk24.jpg"
+                         alt="Gallery Image 2"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Track View</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/ppk14.jpg"
+                         alt="Gallery Image 3"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Family Fun</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/ppk22.jpg"
+                         alt="Gallery Image 4"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Team Event</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/ppk25.jpg"
+                         alt="Gallery Image 5"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Race Start</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/ppk15.jpg"
+                         alt="Gallery Image 6"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Winner's Circle</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/ppk20.jpg"
+                         alt="Gallery Image 7"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Speed Demon</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/ppk18.jpg"
+                         alt="Gallery Image 8"
+                         class="gallery-image">
+                    <div class="gallery-image-overlay">
+                        <h3 class="gallery-image-caption">Corporate Challenge</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-full-gallery-button-container slide-up-animation">
+                <a href="#" class="button-outline view-full-gallery-button">
+                    <i class="fas fa-images button-icon"></i> View Full Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners-section">
+        <div class="section-container">
+            <div class="section-header slide-up-animation">
+                <h2 class="section-title racing-font-style">
+                    <span class="title-highlight-red">OUR</span> <span class="title-highlight-blue">PARTNERS</span>
+                </h2>
+                <div class="section-title-underline"></div>
+                <p class="section-subtitle">
+                    Collaborating with industry leaders to bring you the best racing experience
+                </p>
+            </div>
+
+            <div class="partner-card slide-up-animation">
+                <div class="partner-card-header">
+                    <div class="partner-logo-container">
+                        <img src="./img/ultfunlogo.jpg" alt="Ultimate Fun Logo" class="partner-logo-image">
+                    </div>
+                    <div class="partner-info-container">
+                        <h3 class="partner-name">
+                            <span class="partner-name-highlight-red">Ultimate Fun</span> - Active Partnership
+                        </h3>
+                        <div class="partner-name-underline-red"></div>
+                        <p class="partner-description">
+                            Ultimate Fun Zimbabwe is the ultimate family recreational sports centre located at the Hellenic Sports Club in Eastlea, offering a world-class, non-threatening, and social environment for fun, adventure, and fitness. Whether you're a sports enthusiast, a beginner, or just looking for a fun day out with the family, we've got you covered!
+                        </p>
+                        <p class="partner-description">
+                            We specialize in providing an exciting and safe venue where you and your family can try out a variety of thrilling activities including go-karting, trampoline gymnastics, putt-putt, and paintball. Our diverse selection of sports offers something for everyone, regardless of age or skill level.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="partner-features-grid">
+                    <div class="partner-feature-item">
+                        <div class="partner-feature-icon-container activities-icon-bg">
+                            <i class="fas fa-running partner-feature-icon"></i>
+                        </div>
+                        <h4 class="partner-feature-title">Activities</h4>
+                        <p class="partner-feature-description">
+                            Go-karting, trampoline gymnastics, putt-putt, paintball and more for all ages and skill levels.
+                        </p>
+                    </div>
+                    <div class="partner-feature-item">
+                        <div class="partner-feature-icon-container safety-icon-bg">
+                            <i class="fas fa-shield-alt partner-feature-icon"></i>
+                        </div>
+                        <h4 class="partner-feature-title">Safety First</h4>
+                        <p class="partner-feature-description">
+                            Trained staff ensuring your safety and offering guidance every step of the way.
+                        </p>
+                    </div>
+                    <div class="partner-feature-item">
+                        <div class="partner-feature-icon-container family-icon-bg">
+                            <i class="fas fa-users partner-feature-icon"></i>
+                        </div>
+                        <h4 class="partner-feature-title">Family Focus</h4>
+                        <p class="partner-feature-description">
+                            Perfect destination for a day of excitement, fitness, and quality family time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-card slide-up-animation">
+                <div class="partner-card-header">
+                    <div class="partner-logo-container">
+                        <img src="./img/logorok_2.png" alt="ROK Cup Logo" class="partner-logo-image">
+                    </div>
+                    <div class="partner-info-container">
+                        <h3 class="partner-name">
+                            <span class="partner-name-highlight-blue">ROK CUP VORTEX</span> - Active Partnership
+                        </h3>
+                        <div class="partner-name-underline-blue"></div>
+                        <p class="partner-description">
+                            The ROK Series is the only place in South Africa where drivers can qualify for prestigious international karting events. The ROK Cup South Africa is the premier karting series, offering unparalleled opportunities for drivers to qualify for prestigious international events.
+                        </p>
+                        <p class="partner-description">
+                            As the only series in the country providing a direct pathway to global competitions, ROK Cup South Africa allows drivers to compete for spots in top-tier international events, including the T4 Nations Cup, ROK Cup Superfinal, FIA Karting Academy Trophy, and the FIA OK-N World Cup.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="partner-features-grid">
+                    <div class="partner-feature-item">
+                        <div class="partner-feature-icon-container global-icon-bg">
+                            <i class="fas fa-globe partner-feature-icon"></i>
+                        </div>
+                        <h4 class="partner-feature-title">Global Opportunities</h4>
+                        <p class="partner-feature-description">
+                            Direct pathway to international competitions like ROK Cup Superfinal and FIA events.
+                        </p>
+                    </div>
+                    <div class="partner-feature-item">
+                        <div class="partner-feature-icon-container competition-icon-bg">
+                            <i class="fas fa-balance-scale partner-feature-icon"></i>
+                        </div>
+                        <h4 class="partner-feature-title">Fair Competition</h4>
+                        <p class="partner-feature-description">
+                            Pool engines ensure level playing field based on skill rather than equipment advantage.
+                        </p>
+                    </div>
+                    <div class="partner-feature-item">
+                        <div class="partner-feature-icon-container talent-icon-bg">
+                            <i class="fas fa-star partner-feature-icon"></i>
+                        </div>
+                        <h4 class="partner-feature-title">Talent Development</h4>
+                        <p class="partner-feature-description">
+                            Ideal setting for both newcomers and experienced drivers to develop their skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header slide-up-animation">
+                <h2 class="section-title racing-font-style">
+                    <span class="testimonial-title-racer">RACER</span> <span class="testimonial-title-testimonials">TESTIMONIALS</span>
+                </h2>
+                <div class="section-title-underline testimonial-underline"></div>
+                <p class="section-subtitle testimonial-subtitle">
+                    Hear what our customers say about their Pole Position Karts experience
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card slide-up-animation" style="animation-delay: 0.1s;">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-author-avatar-container">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimonial 1" class="testimonial-author-avatar">
+                        </div>
+                        <div>
+                            <h4 class="testimonial-author-name">Tendai M.</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Absolutely incredible experience! The karts are fast, the track is challenging, and the staff are super friendly. Brought my team here for a bonding session and everyone loved it. We'll definitely be back!"
+                    </p>
+                </div>
+
+                <div class="testimonial-card slide-up-animation" style="animation-delay: 0.2s;">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-author-avatar-container">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Testimonial 2" class="testimonial-author-avatar">
+                        </div>
+                        <div>
+                            <h4 class="testimonial-author-name">Sarah K.</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Celebrated my son's 12th birthday here and it was perfect! The staff went above and beyond to make it special. The safety briefing was thorough but fun, and all the kids had an amazing time racing each other."
+                    </p>
+                </div>
+
+                <div class="testimonial-card slide-up-animation" style="animation-delay: 0.3s;">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-author-avatar-container">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Testimonial 3" class="testimonial-author-avatar">
+                        </div>
+                        <div>
+                            <h4 class="testimonial-author-name">James T.</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "As someone who's raced karts internationally, I was impressed by the quality of the track and equipment at Pole Position. The lap times are competitive and the karts are well-maintained. Great place to hone your skills!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-booking-section">
+        <div class="section-container contact-booking-layout">
+            <div class="contact-info-column slide-up-animation">
+                <h2 class="section-title racing-font-style">
+                    <span class="title-highlight-red">CONTACT</span> <span class="title-highlight-blue">US</span>
+                </h2>
+                <div class="section-title-underline"></div>
+
+                <div class="contact-details-container">
+                    <div class="contact-detail-item">
+                        <div class="contact-icon-container location-icon-bg">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                        </div>
+                        <div>
+                            <h4 class="contact-detail-title">Location</h4>
+                            <p class="contact-detail-text">Hellenic Sports Club, Eastlea, Harare, Zimbabwe</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="contact-icon-container email-icon-bg">
+                            <i class="fas fa-envelope contact-icon"></i>
+                        </div>
+                        <div>
+                            <h4 class="contact-detail-title">Email</h4>
+                            <p class="contact-detail-text">info@polepositionkarts.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="contact-icon-container phone-icon-bg">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                        </div>
+                        <div>
+                            <h4 class="contact-detail-title">Phone</h4>
+                            <p class="contact-detail-text">+263 77 123 4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="contact-icon-container hours-icon-bg">
+                            <i class="fas fa-clock contact-icon"></i>
+                        </div>
+                        <div>
+                            <h4 class="contact-detail-title">Operating Hours</h4>
+                            <p class="contact-detail-text">Monday/Tuesday: Booking Only</p>
+                            <p class="contact-detail-text">Wednesday - Sunday: 10:00AM - 5:00PM</p>
+                            <p class="contact-detail-text">Public Holidays: 10:00AM - 5:00PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media-container">
+                    <h4 class="social-media-title">Follow Us</h4>
+                    <div class="social-media-links">
+                        <a href="#" class="social-media-link facebook-hover">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-media-link twitter-hover">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-media-link instagram-hover">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-media-link youtube-hover">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="book" class="booking-form-column slide-up-animation">
+                <div class="booking-form-container">
+                    <h3 class="booking-form-title">Book Your Experience</h3>
+                    <form class="booking-form">
+                        <div>
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-input">
+                        </div>
+
+                        <div>
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input">
+                        </div>
+
+                        <div>
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input">
+                        </div>
+
+                        <div class="form-grid-halves">
+                            <div>
+                                <label for="date" class="form-label">Date</label>
+                                <input type="date" id="date" class="form-input">
+                            </div>
+
+                            <div>
+                                <label for="time" class="form-label">Time</label>
+                                <select id="time" class="form-input">
+                                    <option value="">Select Time</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="experience" class="form-label">Experience</label>
+                            <select id="experience" class="form-input">
+                                <option value="">Select Experience</option>
+                                <option value="arrive">Arrive & Drive</option>
+                                <option value="sprint">Sprint Races</option>
+                                <option value="enduro">Enduro Races</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="party">Birthday Party</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="participants" class="form-label">Number of Participants</label>
+                            <input type="number" id="participants" min="1" class="form-input">
+                        </div>
+
+                        <div>
+                            <label for="message" class="form-label">Special Requests</label>
+                            <textarea id="message" rows="3" class="form-textarea"></textarea>
+                        </div>
+
+                        <button type="submit" class="button-primary booking-submit-button">
+                            Submit Booking Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.715036003593!2d31.0482153154465!3d-17.78353488784538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a5e17357e7c5%3A0x8a1a3d7f3e1a3e1d!2sHellenic%20Sports%20Club!5e0!3m2!1sen!2szw!4v1620000000000!5m2!1sen!2szw"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                class="map-iframe"></iframe>
     </div>
 
-    <section class="racing-options">
-        <div class="option">
-            <img src="/img/ppk17.jpg" alt="Arrive & Drive">
-            <h3>Arrive & Drive</h3>
-            <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="option">
-            <img src="/img/ppk19.jpg" alt="Sprint Races">
-            <h3>Sprint Races</h3>
-            <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="option">
-            <img src="/img/ppk18.jpg" alt="Enduro Races">
-            <h3>Enduro Races</h3>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
+    <footer class="main-footer-container">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="./img/ppk7.png" alt="Pole Position Karts Logo" class="footer-logo">
+                    <p class="footer-about-text">
+                        Zimbabwe's premier karting destination where speed meets excitement. Experience the thrill of the track!
+                    </p>
+                </div>
 
-    </section>
+                <div class="footer-links-column">
+                    <h4 class="footer-column-title quick-links-title">Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#about" class="footer-link-item">About Us</a></li>
+                        <li><a href="#experiences" class="footer-link-item">Experiences</a></li>
+                        <li><a href="#gallery" class="footer-link-item">Gallery</a></li>
+                        <li><a href="#partners" class="footer-link-item">Partners</a></li>
+                        <li><a href="#contact" class="footer-link-item">Contact</a></li>
+                    </ul>
+                </div>
 
-    <section class="partners">
-        <div class="partners2-text">
-            <div class="partner-and-logo">
-                <h2><span>Ultimate Fun </span>- Active Partnership</h2>
-                <hr class="tiny-ruller">
-                <img src="/img/ultfunlogo.jpg" class="partner-logo" alt="logo">
+                <div class="footer-links-column">
+                    <h4 class="footer-column-title experiences-title">Experiences</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#" class="footer-link-item">Arrive & Drive</a></li>
+                        <li><a href="#" class="footer-link-item">Sprint Races</a></li>
+                        <li><a href="#" class="footer-link-item">Enduro Races</a></li>
+                        <li><a href="#" class="footer-link-item">Corporate Events</a></li>
+                        <li><a href="#" class="footer-link-item">Birthday Parties</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter-column">
+                    <h4 class="footer-column-title newsletter-title">Newsletter</h4>
+                    <p class="footer-newsletter-text">
+                        Subscribe to our newsletter for the latest updates and special offers.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-submit-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
-            <p>Ultimate Fun Zimbabwe is the ultimate family recreational sports centre located at the Hellenic Sports Club in Eastlea, offering a world-class, non-threatening, and social environment for fun, adventure, and fitness. Whether you're a sports enthusiast, a beginner, or just looking for a fun day out with the family, we’ve got you covered!
-                We specialize in providing an exciting and safe venue where you and your family can try out a variety of thrilling activities including go-karting, trampoline gymnastics, putt-putt, and paintball. Our diverse selection of sports offers something for everyone, regardless of age or skill level.
-                At Ultimate Fun, we believe that sports should be fun first and foremost. Our activities are designed to introduce you to the joy of sports in a laid-back and social environment, giving you the chance to learn new skills while enjoying some friendly competition. From go-karting with guidance from experienced marshals and the expertise of Zimbabwe's own karting champion, Zac Dufty, to the light-hearted but challenging world of putt-putt, there’s plenty to keep you entertained.
-                <br><br>
-                For those seeking to enhance their fitness levels and explore something different, trampoline gymnastics offers the perfect mix of fitness, flexibility, and acrobatic fun. Our eight trampoline mats provide a unique opportunity for young athletes to learn new tricks and perfect their skills in a safe and supervised environment.
-                
-                But the excitement doesn’t stop there! Paintball Blitz, with two adrenaline-pumping fields—Urban and Woods—adds an exciting twist to team-based sports. Challenge your tactical skills, improve your accuracy, and experience the thrill of high-energy action as you work with your team to achieve victory!
-                We are dedicated to providing a fun, safe, and welcoming environment where families can bond, laugh, and create unforgettable memories. With trained staff ensuring your safety and offering guidance every step of the way, Ultimate Fun is the perfect destination for a day of excitement, fitness, and quality time with those who matter most.
-                <br><br>
-                Join us at Ultimate Fun, where fun never ends!</p>
-        </div>
-        <div class="partner-images">
-            <img src="/img/ppk14.jpg" alt="Partner 1">
-            <img src="/img/ppk15.jpg" alt="Partner 2">
-            <img src="/img/ppk12.jpg" alt="Partner 3">
-        </div>
-    </section>
-    
 
-    <section class="partners2">
-        <div class="partners2-text">
-        <div class="partner-and-logo"><h2><span>ROK CUP VORTEX </span>- Active Partnership</h2><hr class="tiny-ruller"><img src="/img/logorok_2.png" class="partner-logo" alt="logo"></div>
-        <p>The ROK Series is the only place in South Africa where drivers can qualify for prestigious international karting events. <br><br>
-
-            The ROK Cup South Africa is the premier karting series, offering unparalleled opportunities for drivers to qualify for prestigious international events. As the only series in the country providing a direct pathway to global competitions, ROK Cup South Africa allows drivers to compete for spots in top-tier international events, including the T4 Nations Cup, ROK Cup Superfinal, FIA Karting Academy Trophy, and the FIA OK-N World Cup. With our exclusive access to these elite motorsport platforms, ROK Cup South Africa is the logical choice for aspiring drivers looking to take their talent to the global stage.<br><br>
-            
-            At ROK Cup South Africa, we believe in maintaining the highest standards of fairness and integrity in every race. Our use of pool engines ensures a level playing field, giving every driver an equal opportunity to succeed based on skill and dedication, rather than equipment advantage. This approach fosters a competitive yet supportive environment where the focus is on developing raw talent and promoting sportsmanship, making it the ideal setting for both newcomers and experienced drivers alike.</p>
+            <div class="footer-bottom-bar">
+                <p class="footer-copyright-text">
+                    © 2025 Pole Position Karts. All Rights Reserved.
+                </p>
+                <div class="footer-social-links">
+                    <a href="#" class="footer-social-link-item">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-social-link-item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer-social-link-item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-link-item">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="partner-images">
-            <img src="/img/ppk16.jpg" alt="Partner 1">
-            <img src="/img/ppk18.jpg" alt="Partner 2">
-            <img src="/img/ppk19.jpg" alt="Partner 3">
-        </div>
-    </section>
-
-    <footer class="footer">
-        <img src="/img/ppk17.jpg" alt="Footer Image" class="footer-image">
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@polePositionKarts.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>WhatsApp: (123) 456-7890</p>
-            <hr>
-            <h2>Operating Hours</h2>
-            <p>Monday/Tuesday..........Booking Only</p>
-            <p>Wednesday - Sunday..........10:00AM - 5:00PM</p>
-            <p>Public Holidays..........10:00AM - 5:00PM</p>
-            <br><hr>
-            <p> Copyright © 2025 Pole Position Karts | All Rights Reserved</p>
-        </section>
     </footer>
-    <div class="copywrite">Designed and Developed by Anesu Mashonga</div>
+
+    <button id="back-to-top" class="back-to-top-button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
